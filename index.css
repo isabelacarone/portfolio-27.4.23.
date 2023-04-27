@@ -1,0 +1,270 @@
+* {
+    /* style geral, sempre lembrar do GRANDE PAI */
+        margin: 0px;
+        padding: 0px;
+       box-sizing: border-box;
+       background-color: #cccaaa;
+       font-family: 'Nunito', sans-serif;
+}
+ /* body */ 
+nav {
+       position: relative;
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       gap: 20px;
+       height: 60px;
+       width: 100%;
+       padding-top: 0px;
+       padding-bottom: 0px;
+       min-height: 0px;
+       margin-bottom: 10px;
+
+}
+
+nav logo {
+       display: flex;
+       position: relative;
+       background-color: #bdbba0;
+}
+
+nav p {
+
+       display: flex;
+       padding: 80px;
+       justify-items: right;
+      font-size: 18px;
+     font-family: 'Nunito', sans-serif;
+     font-style: unset;
+}
+
+nav ul {
+       display: flex;
+       align-items: center;
+       justify-content: space-around;
+       width: 80%;
+       padding: 40px;
+}
+
+nav ul li  {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+     font-size: 16px;
+     color: #474306;
+     font-family: 'Nunito', sans-serif;
+     text-decoration: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #474306;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+nav ul li a:hover {
+       color: #6d6c52;
+       cursor: pointer;
+       scale: 1.25;
+       
+}
+
+ /* banner - imagem com foto e texto -  inicio */ 
+
+  
+section#Início {
+    padding: 30px 15%;
+}
+  
+  
+section#Início {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    min-height: 40vw;
+    margin-bottom: 40px;
+}
+  
+
+
+section#Início h2 {
+    margin: 4px;
+    font-size: 58px;
+    color: rgb(68, 56, 56)
+}
+  
+section#Início h3 {
+    font-weight: 400;
+    font-size: 22px;
+    margin: 2px;
+    color: rgba(83, 70, 70, 0.57);
+}
+  
+/* para a movimentação acontecer */
+
+@keyframes morph { 0%, 100% 
+    {
+      border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
+    }
+    29% {
+      border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
+    }
+    71% {
+      border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+    }
+}
+  
+ section#Início img {
+    width: 480px;
+    height: 500px;
+    object-fit: cover;
+    animation: morph 2.5s linear infinite;
+}
+
+/* trabalhos */ 
+
+
+section#Trabalhos {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  min-height: 10vw;
+}
+
+section#Trabalhos h1 {
+    margin: 90px;
+    font-size: 64px;
+    color: rgb(68, 56, 56);
+    text-shadow: #474306;
+}
+
+section#Trabalhos h3 {
+    margin: 90px;
+    font-size: 30px;
+    margin: 85px;
+    color: rgba(83, 70, 70, 0.57);
+}
+
+/*  div */ 
+
+.imgtrabalho { 
+ display: flex;
+ justify-content: space-evenly;
+}
+
+.github {
+    padding: 60px;
+    margin-top: 10px;
+    margin-bottom: 50px; 
+    margin-left: 0px;
+    margin-right: 30px;
+}
+
+.behance {
+ padding: 60px;
+ margin-top: 10px;
+ margin-bottom: 50px; 
+ margin-left: 0px;
+ margin-right: 30px;
+}
+
+/* contatos */ 
+
+section#Contatos {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    min-height: 10vw;
+}
+
+section#Contatos h1 {
+    margin: 90px;
+    font-size: 64px;
+    color: rgb(68, 56, 56);
+    text-shadow: #474306;
+}
+
+section#Contatos h3 {
+    margin: 90px;
+    font-size: 30px;
+    margin: 85px;
+    color: rgba(83, 70, 70, 0.57);
+}
+
+/*  div */ 
+
+.imgcontato{ 
+    display: flex;
+    justify-content: space-evenly;
+}
+   
+.instagram {
+   padding: 60px;
+   margin-top: 10px;
+   margin-bottom: 50px; 
+   margin-left: 0px;
+   margin-right: 30px;
+}
+   
+.email {
+    padding: 60px;
+    margin-top: 10px;
+    margin-bottom: 50px; 
+    margin-left: 0px;
+    margin-right: 30px;
+}
+
+
+/* localização */ 
+
+section#Locailização {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    min-height: 10vw;
+}
+
+section#Localização h1 {
+    margin: 90px;
+    font-size: 64px;
+    color: rgb(68, 56, 56);
+    text-shadow: #474306;
+}
+
+section#Localização h3 {
+    padding: 0px;
+    margin: 90px;
+    font-size: 36px;
+    margin: 85px;
+    color: rgba(83, 70, 70, 0.57);
+}
+
+.loc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* footer */ 
+
+footer#footer {
+    background-color: #c9c69f;
+    padding: 5px;
+    font-size: 24px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
